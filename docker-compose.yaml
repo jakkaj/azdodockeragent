@@ -9,3 +9,4 @@ services:
       - /azdowork:/azdowork    
     env_file:
     - .env   
+    #restart: always
