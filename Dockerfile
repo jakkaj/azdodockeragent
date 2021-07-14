@@ -48,7 +48,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   #   make \   
   # && rm -rf /var/lib/apt/lists/*
 
-COPY ./start.sh .
-RUN chmod +x start.sh
+COPY ./azdo.sh .
+RUN chmod +x azdo.sh
 
-ENTRYPOINT [ "./start.sh" ]
+ENTRYPOINT [ "./azdo.sh" ]
